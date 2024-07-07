@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="leaderboard">
+    <div class="team" *ngFor="let team of leaderboard">
+      <div class="team-header" (click)="toggleExpand(team.teamName)">
+        <span class="team-name">{{ team.teamName }}</span>
+        <span class="team-points">{{ team.totalPoints }}</span>
+      </div>
+      <div class="team-details" *ngIf="expandedTeam === team.teamName">
+        <div class="country" *ngFor="let country of team.countries | keyvalue">
+          <span class="country-name">{{ country.value.name }}</span>
+          <span class="country-points">{{ country.value.totalPoints}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  

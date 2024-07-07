@@ -1,0 +1,47 @@
+.leaderboard {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .team {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .team-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .team-name {
+    font-weight: bold;
+  }
+  
+  .team-points {
+    font-size: 1.2em;
+  }
+  
+  .team-details {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+  }
+  
+  .country {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .country-name {
+    font-weight: normal;
+  }
+  
+  .country-points {
+    font-size: 1em;
+  }

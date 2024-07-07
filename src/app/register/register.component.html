@@ -1,0 +1,30 @@
+<app-header></app-header>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="register-form">
+<section>
+    <app-team-selection [tier]="1" (selectedCountryID)="handleCountrySelection($event)"></app-team-selection>
+    <app-team-selection [tier]="2" (selectedCountryID)="handleCountrySelection($event)"></app-team-selection>
+    <app-team-selection [tier]="3" (selectedCountryID)="handleCountrySelection($event)"></app-team-selection>
+    <app-team-selection [tier]="4" (selectedCountryID)="handleCountrySelection($event)"></app-team-selection>
+    <app-team-selection [tier]="5" (selectedCountryID)="handleCountrySelection($event)"></app-team-selection>
+</section>
+<div class="form-input"> 
+    <label for="teamname">Team Name:</label>
+    <input id="teamname" formControlName="teamname" />
+  </div>
+  <div class="form-input">
+    <label for="email">Email:</label>
+    <input id="email" type="email" formControlName="email" />
+  </div>
+  <div class="form-input" >
+    <label for="password">Password:</label>
+    <input id="password" type="password" formControlName="password" />
+  </div>
+    <div class="form-input">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input id="confirmPassword" type="password" formControlName="confirmPassword" />
+    </div>
+    <div *ngIf="passwordMismatch" class="error-message">
+        Passwords do not match. Please re-enter.
+      </div>
+  <button type="submit">Register Your Team</button>
+</form>

@@ -1,0 +1,13 @@
+.form-input {
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(188, 253, 253);
+}
+
+form.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    background-color: rgba(255, 225, 0, 0.071);
+}

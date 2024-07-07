@@ -7,6 +7,7 @@
     <app-team-selection [tier]="4" (selectedCountryID)="handleCountrySelection($event)"></app-team-selection>
     <app-team-selection [tier]="5" (selectedCountryID)="handleCountrySelection($event)"></app-team-selection>
 </section>
+<section class="form-inputs-container">
 <div class="form-input"> 
     <label for="teamname">Team Name:</label>
     <input id="teamname" formControlName="teamname" />
@@ -26,5 +27,6 @@
     <div *ngIf="passwordMismatch" class="error-message">
         Passwords do not match. Please re-enter.
       </div>
-  <button type="submit">Register Your Team</button>
+  <button class="register-btn" type="submit">Register Your Team</button>
+</section>
 </form>

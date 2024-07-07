@@ -1,10 +1,12 @@
+@import "../vars";
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    background-color: $header-color;
+    
   }
   
   .header-content {
@@ -16,6 +18,7 @@
   
   .app-name {
     font-size: 1.5em;
+    font-family: $hero-font;
   }
   
   .burger-menu {
@@ -30,9 +33,10 @@
   }
   
   .menu a {
-    color: white;
     text-decoration: none;
-    padding: 10px 0;
+    color: $font-color;
+    padding: 1rem;
+
   }
   
   .menu a:hover {
@@ -48,11 +52,12 @@
       display: none;
       flex-direction: column;
       width: 100%;
-      background-color: #333;
+      background-color: $header-color;
       position: absolute;
       top: 50px;
       left: 0;
       z-index: 1000;
+      gap: 0;
     }
   
     .menu.open {

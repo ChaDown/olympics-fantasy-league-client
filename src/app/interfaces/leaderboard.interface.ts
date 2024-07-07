@@ -8,4 +8,5 @@ export interface LeaderboardDTO {
       country5: { name: string; totalPoints: number };
     };
     totalPoints: number;
+    ranking: number;
   }

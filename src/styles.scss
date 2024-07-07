@@ -1,5 +1,28 @@
+@import "app/vars";
+
 .form-input {
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 0.5rem;
     background-color: rgb(188, 253, 253);
+}
+
+html {
+    background-color: $bg-color;
+    margin: 0;
+    font-family: $font-family;
+}
+
+body {
+    color: $font-color;
+}
+
+select {
+    margin: 0.5rem;
+    color: $font-color;
+    font-size: 1rem;
+    max-width: 50%;
+}
+
+h3 {
+    padding: 0;
 }

@@ -1,1 +1,37 @@
-<p>how-it-works works!</p>
+<app-header></app-header>
+<div class="how-it-works">
+    <h1>How Olympics Fantasy League Works</h1>
+    <h2>Create Your Team</h2>
+    <p>Your team is made up of five countries from five different tiers. The tiers have been decided based on the medal table from Tokyo 2020, 
+        which you can view <a href="https://olympics.com/tokyo-2020/olympic-games/en/results/all-sports/medal-standings.htm">here</a> to give you some hints.  </p>
+       <p>The number beside each country is the number of participants they have at Paris 2024, for example Angola (20) means Team Angola are sending 20 athletes to Paris 2024.</p> 
+   
+    <p>Once you pick your countries, choose a team name, enter your email and password and click Register! And you're in!
+        You should now be able to see your team on the leaderboard page.
+    </p>
+    <h2>Scoring</h2>
+    <p>Points are awarded based on the number of medals your countries win.</p>
+    <ul>
+        <li>Gold - 5 points</li>
+        <li>Silver - 3 points</li>
+        <li>Bronze - 1 point</li>
+    </ul>
+    <p>But, there's a catch! <b>Tier multipliers!</b> To make it more competitive, there are points multipliers for each tier, with the lower tier teams 
+        having the potential to earn more points. The multipliers are as follows:
+    </p>
+    <ul>
+        <li>Tier 1 - No multiplier</li>
+        <li>Tier 2 - No multiplier</li>
+        <li>Tier 3 - 2x</li>
+        <li>Tier 4 - 3x</li>
+        <li>Tier 5 - 5x</li>
+    </ul>
+    <h3>Team Scoring Example</h3>
+    <p>Team USA wins 10 gold, 5 silver and 3 bronze medals. Team USA is a Tier 1 country, so they earn (10 * 5) + (5 * 3) + (3 * 1) = 59 points.</p>
+    <p>Team Angola wins 1 gold, 1 silver and 0 bronze medals. Team Angola is a Tier 5 country, so they earn (1 * 5) + (2 * 3) + (0 * 1) = 11 * 5 (multiplier) = 55 points</p>
+    <p>Clear? Thought so! May the best team win</p>
+    <div class="btns">
+        <button routerLink="/register">Register</button>
+        <button routerLink="/leaderboard">Leaderboard</button>
+    </div>
+</div>

@@ -1,9 +1,13 @@
 @import "app/vars";
 
-.form-input {
-    margin: 0.5rem;
+form input {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+    background-color: $header-color;
+}
+
+form input, form label {
+    margin: 0rem;
     padding: 0.5rem;
-    background-color: rgb(188, 253, 253);
 }
 
 html {
@@ -21,8 +25,40 @@ select {
     color: $font-color;
     font-size: 1rem;
     max-width: 50%;
+    background-color: $header-color;
 }
 
 h3 {
     padding: 0;
+}
+
+// General form layout
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    background-color: $container-color;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+button {
+    margin: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: $header-color;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    float: right;
+}
+
+button:hover {
+    background-color: hsl(75, 100%, 80%);
+    cursor: pointer;
 }

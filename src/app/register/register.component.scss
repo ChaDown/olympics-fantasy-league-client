@@ -5,10 +5,10 @@
     padding: 0.5rem;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(188, 253, 253);
+    background-color: $container-color;
 }
 
-form.register-form {
+form{
     display: flex;
     flex-direction: column;
     align-items: center;

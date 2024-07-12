@@ -1,5 +1,5 @@
 <app-header></app-header>
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+<form  class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div>
         <label for="email">Email:</label>
         <input id="email" type="email" formControlName="email" />
@@ -8,8 +8,10 @@
         <label for="password">Password:</label>
         <input id="password" type="password" formControlName="password" />
     </div>
+    <div class="login-btns">
     <button type="submit">Login</button>
     <button routerLink="/register">Register</button>
+</div>
     <div *ngIf="loginFailed" class="error-message">
         Login failed. Please try again. 
     </div>

@@ -12,12 +12,11 @@ export class LoginService {
   // Inject the http client
   constructor(private http: HttpClient) { }
 
-  // login(loginDetails: LoginDetails): Observable<any> {
-  //   // { observe: 'response', responseType: 'text' } is used to get the full response as observable
-  //   this.http.post(this.apiUrl, loginDetails);
-  // }
-
   login(loginDetails: LoginDetails): Observable<HttpResponse<any>> {
-    return this.http.post<HttpResponse<any>>(this.apiUrl, loginDetails, { observe: 'response'});
+    return this.http.post<HttpResponse<any>>(this.apiUrl, loginDetails, { observe: 'response', withCredentials: true});
+  }
+
+  logout(): Observable<any> {
+    return this.http.post('http://localhost:8080/api/auth/logout', null, { withCredentials: true });
   }
 }

@@ -1,4 +1,7 @@
 <app-header></app-header>
+<div class="container how-it-works-ctr" ><button class="how-it-works-btn" routerLink="/how-it-works">
+  How Olympics Fantasy League Works</button>
+</div>
 <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="register-form">
 <section>
     <app-team-selection [tier]="1" (selectedCountryID)="handleCountrySelection($event)"></app-team-selection>

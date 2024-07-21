@@ -34,11 +34,11 @@ h3 {
 
 // General form layout
 
-form {
+form, .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90vw;
+    max-width: 90vw;
     background-color: $container-color;
     margin: 0 auto;
     margin-top: 1rem;
@@ -49,10 +49,9 @@ form {
 
 button {
     margin: 1rem;
-    margin-bottom: 1.5rem;
     background-color: $header-color;
-    font-size: 1.1rem;
-    padding: 1rem;
+    font-size: 1.05rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 5px;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
     float: right;
@@ -61,4 +60,8 @@ button {
 button:hover {
     background-color: hsl(75, 100%, 80%);
     cursor: pointer;
+}
+
+h1, h2, h3 {
+    font-family: $hero-font, sans-serif;
 }

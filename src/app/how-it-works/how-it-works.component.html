@@ -1,5 +1,5 @@
 <app-header></app-header>
-<div class="how-it-works">
+<section class="container how-it-works ">
     <h1>How Olympics Fantasy League Works</h1>
     <h2>Create Your Team</h2>
     <p>Your team is made up of five countries from five different tiers. The tiers have been decided based on the medal table from Tokyo 2020, 
@@ -27,11 +27,19 @@
         <li>Tier 5 - 5x</li>
     </ul>
     <h3>Team Scoring Example</h3>
-    <p>Team USA wins 10 gold, 5 silver and 3 bronze medals. Team USA is a Tier 1 country, so they earn (10 * 5) + (5 * 3) + (3 * 1) = 59 points.</p>
-    <p>Team Angola wins 1 gold, 1 silver and 0 bronze medals. Team Angola is a Tier 5 country, so they earn (1 * 5) + (2 * 3) + (0 * 1) = 11 * 5 (multiplier) = 55 points</p>
-    <p>Clear? Thought so! May the best team win</p>
+    <p>Team USA wins 10 gold, 5 silver and 3 bronze medals. Team USA is a Tier 1 country:</p>
+    <li>Gold: 10 * 5 = 50</li>
+    <li>Silver: 5 * 3 = 15</li>
+    <li>Bronze: 3 * 1 = 3 </li>
+    <li>Total points = 68</li>
+    <p>Team Angola wins 1 gold, 1 silver and 0 bronze medals. Team Angola is a Tier 5 country:</p>
+    <li>Gold: 1 * 5 = 5</li>
+    <li>Silver: 1 * 3 = 3</li>
+    <li>Bronze: 0 * 1 = 0 </li>
+    <li>Total points = 8 * 5 (multiplier) = 40</li>
+    <p> May the best team win</p>
     <div class="btns">
         <button routerLink="/register">Register</button>
         <button routerLink="/leaderboard">Leaderboard</button>
     </div>
-</div>
+    <section>

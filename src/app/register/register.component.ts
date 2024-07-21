@@ -4,11 +4,12 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { CommonModule } from '@angular/common';
 import { RegisterService } from '../service/api/register.service';
 import { HeaderComponent } from '../header/header.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [TeamSelectionComponent, ReactiveFormsModule, FormsModule, CommonModule, HeaderComponent],
+  imports: [TeamSelectionComponent, ReactiveFormsModule, FormsModule, CommonModule, HeaderComponent, RouterLink],
   templateUrl: './register.component.html',
   styleUrl: './register.component.scss'
 })

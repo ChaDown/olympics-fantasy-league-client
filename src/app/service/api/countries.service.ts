@@ -8,7 +8,7 @@ import { Observable, map } from 'rxjs';
 })
 export class CountryService {
 
-  private apiUrl = 'http://localhost:8080/api/countries'; 
+  private apiUrl = 'http://localhost:8000/api/countries'; 
 
   constructor(private http: HttpClient) { }
 

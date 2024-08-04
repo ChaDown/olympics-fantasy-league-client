@@ -1,9 +1,10 @@
 <app-header></app-header>
-<div class="container how-it-works-ctr" ><button class="how-it-works-btn" routerLink="/how-it-works">
+<div class="container how-it-works-ctr" ><button class="how-it-works-btn" routerLink="/how-it-works" >
   How Olympics Fantasy League Works</button>
 </div>
-<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="register-form">
-<section>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="register-form form">
+  <h1>Create Team</h1>
+<section class="team-selection-section">
     <app-team-selection [tier]="1" (selectedCountryID)="handleCountrySelection($event)"></app-team-selection>
     <app-team-selection [tier]="2" (selectedCountryID)="handleCountrySelection($event)"></app-team-selection>
     <app-team-selection [tier]="3" (selectedCountryID)="handleCountrySelection($event)"></app-team-selection>
@@ -13,23 +14,19 @@
 <section class="form-inputs-container">
 <div class="form-input"> 
     <label for="teamname">Team Name:</label>
-    <input id="teamname" formControlName="teamname" />
+    <input id="teamname" formControlName="teamname" [ngClass]="{'invalid-input': isControlInvalid('teamname')}" />
   </div>
   <div class="form-input">
     <label for="email">Email:</label>
-    <input id="email" type="email" formControlName="email" />
+    <input id="email" type="email" formControlName="email" [ngClass]="{'invalid-input': isControlInvalid('email')}" />
   </div>
-  <div class="form-input" >
-    <label for="password">Password:</label>
-    <input id="password" type="password" formControlName="password" />
-  </div>
-    <div class="form-input">
-        <label for="confirmPassword">Confirm Password:</label>
-        <input id="confirmPassword" type="password" formControlName="confirmPassword" />
-    </div>
-    <div *ngIf="passwordMismatch" class="error-message">
-        Passwords do not match. Please re-enter.
-      </div>
-  <button class="register-btn" type="submit">Register Your Team</button>
+  <button class="register-btn" type="submit" >Register Your Team</button>
 </section>
+<div *ngIf="invalidForm" class="error-message">
+  Form is invalid. Please fill out all fields and try again.
+</div>
+<div *ngIf="successfulForm" class="error-message green">
+  Team submitted successfully. Confirm your email address and you'll be added to the leaderboard!
+</div>
 </form>
+

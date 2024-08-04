@@ -12,7 +12,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90vw;
+    max-width: 90vw;
     background-color: $container-color;
     margin: 0 auto;
     margin-top: 1rem;
@@ -37,4 +37,34 @@ form {
 .how-it-works-btn {
     margin: 0;
 }
+
+.invalid-input {
+    border: 2px solid red;
+}
+
+.disable-btn {
+    background-color: grey;
+    color: white;
+    cursor: not-allowed;
+    pointer-events: none; /* Don't let it be clicked */
+    opacity: 0.6; 
+  }
+
+  .error-message {
+    background-color: rgb(255, 160, 160);
+    border: 1px solid red;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 3px;
+    color: black;
+  }
+
+  .green {
+    background-color: rgb(160, 255, 160);
+    border: 1px solid green;
+  }
+
+  .team-selection-section {
+    max-width: 90%;
+  }
 

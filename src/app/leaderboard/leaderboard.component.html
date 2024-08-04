@@ -8,7 +8,7 @@
       </div>
       <div class="team-details" *ngIf="expandedTeam === team.teamName">
         <div class="country" *ngFor="let country of team.countries | keyvalue">
-          <span class="country-name">{{ country.value.name }}</span>
+          <span class="country-name">{{country.value.flagEmoji}} {{ country.value.name }}</span>
           <span class="country-points">{{ country.value.totalPoints}}</span>
         </div>
       </div>

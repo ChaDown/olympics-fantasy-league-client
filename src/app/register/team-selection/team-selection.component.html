@@ -1,6 +1,6 @@
 <div class="select-country">
   <h3>Tier {{ tier }}</h3>
   <select (change)="selectCountry($event)">
-    <option *ngFor="let country of countries" [value]="country.id">{{ country.name }} ({{ country.participants }})</option>
+    <option *ngFor="let country of countries" [value]="country.id">{{country.flagEmoji}} {{ country.name }} ({{ country.participants }})</option>
   </select>
 </div>

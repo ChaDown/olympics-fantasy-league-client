@@ -1,18 +1,12 @@
 <div class="header">
   <div class="header-content">
     <div class="burger-menu" (click)="toggleMenu()">
-      &#9776; <!-- Unicode for the burger menu icon -->
+      &#9776; <!-- burger symbol code-->
     </div>
-    <!-- <div>
-      <img class="logo" src="../../assets/ofl_logo.jpg" alt="Olympics Fantasy League Logo Flame" />
-    </div> -->
     <div class="app-name" routerLink="/" >Olympics Fantasy League</div>
     <div class="menu" [class.open]="menuOpen">
-      <a routerLink="/" (click)="toggleMenu()">Home</a>
       <a routerLink="/register" (click)="toggleMenu()">Create Team</a>
       <a routerLink="/leaderboard" (click)="toggleMenu()">Leaderboard</a>
-      <a routerLink="/login" (click)="toggleMenu()">Login</a>
-      <a routerLink="/account" (click)="toggleMenu()">My Account</a>
       <a routerLink="/how-it-works" (click)="toggleMenu()">How it Works</a>
     </div>
   </div>

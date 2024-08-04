@@ -1,27 +1,7 @@
-# OlympicsFantasyLeagueCLIENT
+Olympics Fantasy League
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+This is the client end of a fantasy team game built for the Paris Olympics 2024. It's built in Angular (typescript), with a Spring Boot backend. 
 
-## Development server
+Users select five countries from five tiers and register a team. Once their email is verified, they will be added to the leaderboard. The backend registers the user and scrapes the olympic medal table to calculate their points. Users can view their points tally on the leaderboard page. Here they will see the global leaderboard, and how they rank against other competitors! 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+For more information on how the game works or how the points are calculated please visit the "How it Works" page. Good luck! 

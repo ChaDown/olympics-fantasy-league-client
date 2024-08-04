@@ -8,7 +8,7 @@ import { LeaderboardDTO } from '../../interfaces/leaderboard.interface';
 })
 export class LeaderboardService {
   
-  private apiUrl = 'http://localhost:8080/api/leaderboard'; 
+  private apiUrl = 'http://localhost:8000/api/leaderboard'; 
 
   constructor(private http: HttpClient) {}
 

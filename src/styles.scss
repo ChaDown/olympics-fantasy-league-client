@@ -65,3 +65,7 @@ button:hover {
 h1, h2, h3 {
     font-family: $hero-font, sans-serif;
 }
+
+.invalid-input {
+    border: 2px solid red;
+}

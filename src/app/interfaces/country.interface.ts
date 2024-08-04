@@ -1,6 +1,7 @@
 export interface CountryPoints {
     name: string;
     totalPoints: number;
+    flagEmoji: string;
   }
 
 export interface Country {
@@ -12,4 +13,5 @@ export interface Country {
     tier: number;
     participants: number;
     totalPoints?: number; 
+    flagEmoji: string;
 }

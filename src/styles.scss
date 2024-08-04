@@ -50,11 +50,13 @@ form, .container {
 button {
     margin: 1rem;
     background-color: $header-color;
+    color: $font-color;
     font-size: 1.05rem;
     padding: 0.5rem 1.5rem;
     border-radius: 5px;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
     float: right;
+    text-decoration: none;
 }
 
 button:hover {

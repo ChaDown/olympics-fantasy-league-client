@@ -36,6 +36,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/olympics-fantasy-league-client/",
               "budgets": [
                 {
                   "type": "initial",

@@ -30,8 +30,6 @@ export class RegisterComponent {
     this.registerForm = this.fb.group({
 
       email: ['', [Validators.required, Validators.email]],
-      // password: ['', [Validators.required, Validators.minLength(6)]],
-      // confirmPassword: ['', [Validators.required, Validators.minLength(6)]],
       teamname: ['', [Validators.required, Validators.minLength(3)]],
 
     });
@@ -64,6 +62,7 @@ export class RegisterComponent {
           if (response.success) {
             // This will prompt user to confirm email
             this.successfulForm = true;
+            this.invalidForm = false;
           }
         });
   

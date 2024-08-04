@@ -8,7 +8,7 @@ import { LeaderboardDTO } from '../../interfaces/leaderboard.interface';
 })
 export class LeaderboardService {
   
-  private apiUrl = 'http://localhost:8000/api/leaderboard'; 
+  private apiUrl = 'https://cold-lacie-olympic-fantasy-league-fb696b84.koyeb.app/api/leaderboard'; 
 
   constructor(private http: HttpClient) {}
 

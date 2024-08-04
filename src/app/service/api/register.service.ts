@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class RegisterService {
 
-  private apiUrl = 'http://localhost:8000/api/auth/register'; 
+  private apiUrl = 'https://cold-lacie-olympic-fantasy-league-fb696b84.koyeb.app/api/auth/register'; 
   // Inject the http client
   constructor(private http: HttpClient) { }
 

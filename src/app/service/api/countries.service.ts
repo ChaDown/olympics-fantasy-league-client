@@ -8,7 +8,7 @@ import { Observable, map } from 'rxjs';
 })
 export class CountryService {
 
-  private apiUrl = 'http://localhost:8000/api/countries'; 
+  private apiUrl = 'https://cold-lacie-olympic-fantasy-league-fb696b84.koyeb.app/api/countries'; 
 
   constructor(private http: HttpClient) { }
 
